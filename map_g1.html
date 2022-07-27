@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a9abef3506dfaaae26f78b870593743b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a9abef3506dfaaae26f78b870593743b" ></div>
+        
+</body>
+<script>    
+    
+            var map_a9abef3506dfaaae26f78b870593743b = L.map(
+                "map_a9abef3506dfaaae26f78b870593743b",
+                {
+                    center: [40.72307, -73.95568],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b975a8179e6ada7b9f89f69a84f4572 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a9abef3506dfaaae26f78b870593743b);
+        
+    
+            var marker_cluster_1a1fcd77a3ea79d73f7c7e6f2adf4ea6 = L.markerClusterGroup(
+                {}
+            );
+            map_a9abef3506dfaaae26f78b870593743b.addLayer(marker_cluster_1a1fcd77a3ea79d73f7c7e6f2adf4ea6);
+        
+    
+            var marker_2ab7ca7399a5f55e5cb203ec80247c8e = L.marker(
+                [40.75918, -73.98801],
+                {}
+            ).addTo(marker_cluster_1a1fcd77a3ea79d73f7c7e6f2adf4ea6);
+        
+    
+        var popup_ebd1cca3b1ee043802da1bcee55632dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_feeb4fc2428c6594ea62df50d66cf01d = $(`<div id="html_feeb4fc2428c6594ea62df50d66cf01d" style="width: 100.0%; height: 100.0%;">[244361589, 'Manhattan', 'Theater District']</div>`)[0];
+            popup_ebd1cca3b1ee043802da1bcee55632dc.setContent(html_feeb4fc2428c6594ea62df50d66cf01d);
+        
+
+        marker_2ab7ca7399a5f55e5cb203ec80247c8e.bindPopup(popup_ebd1cca3b1ee043802da1bcee55632dc)
+        ;
+
+        
+    
+    
+            var marker_9ebff47dfca2c76e056e1089987ee486 = L.marker(
+                [40.75828, -73.98876],
+                {}
+            ).addTo(marker_cluster_1a1fcd77a3ea79d73f7c7e6f2adf4ea6);
+        
+    
+        var popup_c5a8e23f9730379103d18b0092beb35b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c809d70a34eda90a4214cdc0f65c93d4 = $(`<div id="html_c809d70a34eda90a4214cdc0f65c93d4" style="width: 100.0%; height: 100.0%;">[244361589, 'Manhattan', 'Theater District']</div>`)[0];
+            popup_c5a8e23f9730379103d18b0092beb35b.setContent(html_c809d70a34eda90a4214cdc0f65c93d4);
+        
+
+        marker_9ebff47dfca2c76e056e1089987ee486.bindPopup(popup_c5a8e23f9730379103d18b0092beb35b)
+        ;
+
+        
+    
+    
+            var marker_7545da0144230a2c1dab24a5a513a55f = L.marker(
+                [40.65417, -73.74158],
+                {}
+            ).addTo(marker_cluster_1a1fcd77a3ea79d73f7c7e6f2adf4ea6);
+        
+    
+        var popup_01961353255409b6af3f3eacf0822583 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5adffffdb28189b639919b626aed0d22 = $(`<div id="html_5adffffdb28189b639919b626aed0d22" style="width: 100.0%; height: 100.0%;">[228415932, 'Queens', 'Rosedale']</div>`)[0];
+            popup_01961353255409b6af3f3eacf0822583.setContent(html_5adffffdb28189b639919b626aed0d22);
+        
+
+        marker_7545da0144230a2c1dab24a5a513a55f.bindPopup(popup_01961353255409b6af3f3eacf0822583)
+        ;
+
+        
+    
+    
+            var marker_49f096fa6de6d41e0b63357f67a2900a = L.marker(
+                [40.6611, -73.7683],
+                {}
+            ).addTo(marker_cluster_1a1fcd77a3ea79d73f7c7e6f2adf4ea6);
+        
+    
+        var popup_c6fd240a65c67a0d8ab54cf608616db0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d29b84fdb9aff32b9e934f29dab1abd4 = $(`<div id="html_d29b84fdb9aff32b9e934f29dab1abd4" style="width: 100.0%; height: 100.0%;">[156684502, 'Queens', 'Springfield Gardens']</div>`)[0];
+            popup_c6fd240a65c67a0d8ab54cf608616db0.setContent(html_d29b84fdb9aff32b9e934f29dab1abd4);
+        
+
+        marker_49f096fa6de6d41e0b63357f67a2900a.bindPopup(popup_c6fd240a65c67a0d8ab54cf608616db0)
+        ;
+
+        
+    
+</script>
